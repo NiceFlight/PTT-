@@ -26,7 +26,7 @@ def valhallaChck(PTT_ID):
 	elif PTT_ID in valhallaList:
 		print(f"目前共有 {len(valhallaList)} 名勇士在英靈殿，很可惜，{PTT_ID} 也是其中之一，無法升官發財！")
 	else:
-		print(f"恭喜你！{PTT_ID} 明天請到黨部報到上班！")
+		print(f"恭喜你！{PTT_ID} 明天請到黨部報到！")
 
 
 if __name__ == '__main__':
