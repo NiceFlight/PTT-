@@ -16,12 +16,12 @@ valhalla = driver.current_url
 driver.quit()
 
 res = requests.get(valhalla, headers=headers).text
-valhalla = res.split()
+valhallaList = res.split()
 
 PTT_ID = input("請輸入你的 PTT ID：").strip().lower()
 
-if PTT_ID in valhalla:
-	print(f"目前共有 {len(valhalla)} 名勇士在英靈殿，很可惜，{PTT_ID} 在英靈殿榜上，無法升官發財！")
+if PTT_ID in valhallaList:
+	print(f"目前共有 {len(valhallaList)} 名勇士在英靈殿，很可惜，{PTT_ID} 在英靈殿榜上，無法升官發財！")
 else:
 	print(f"恭喜你！{PTT_ID} 明天請到黨部報到上班！")
 	
